@@ -104,12 +104,12 @@ const FolderView = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.status === 200) {
-        if (stackBreadcrumb.length > 1) {
+        if (stackBreadcrumb.length > 2) {
           navigation(
             `/folder/${stackBreadcrumb[stackBreadcrumb.length - 2]._id}`
           );
         } else {
-          navigation(`/`);
+          navigation("/");
         }
       }
     } catch (err) {
@@ -117,6 +117,7 @@ const FolderView = () => {
     }
     setLoading(false);
   };
+  console.log(stackBreadcrumb);
 
   const filteredImages = folder?.images.filter((image) =>
     image.name.toLowerCase().includes(searchImg.toLowerCase())
