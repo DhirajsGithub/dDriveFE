@@ -1,0 +1,145 @@
+
+.folder-view {
+    padding: 20px;
+  }
+  
+  .folder-view h2 {
+    margin-bottom: 20px;
+  }
+  
+  .folder-view form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .folder-view input {
+    width: 100% !important;
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .folder-view form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .folder-view form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .folder-list,
+  .image-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .folder-list li,
+  .image-list li {
+    margin-bottom: 10px;
+  }
+  
+  .folder-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .folder-list a:hover {
+    text-decoration: underline;
+  }
+  .folder-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  
+  }
+  .folder-img-name p{
+    max-width: 150px !important;
+    text-align: center;
+
+   word-wrap: break-word;
+
+  }
+  .folder-img-name div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .folder-img-name img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: multiply !important;
+  }
+
+  .image-item{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-item p{
+    margin-top: 10px;
+    text-align: center;
+  }
+  .image-item img{
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  .image-list{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 8px;
+    color: #aaa;
+  }
+  
+  .breadcrumb-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumb-item a:hover {
+    color: #0056b3;
+  }
+  
